@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes border-animation-classy {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.border-card-classy {
+    position: relative;
+    padding: 4px; 
+    border-radius: 12px;
+    background: linear-gradient(90deg, black, white, black, white);
+    background-size: 200% 100%;
+    animation: border-animation-classy 10s linear infinite;
+}
+
+.border-card-classy img {
+    border-radius: inherit;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05); 
+    transition: transform 0.5s ease-in-out;
+}
